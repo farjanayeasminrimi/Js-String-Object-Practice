@@ -5,23 +5,23 @@ let person = {
   married: true,
   'fav places': ['Dhaka', 'Rome'],
 }
-// console.log(person);
-// console.log(person.salary); //dot notation
-// console.log(person['married']); //bracket notation
-// console.log(person['fav places']);
+console.log(person);
+console.log(person.salary); //dot notation
+console.log(person['married']); //bracket notation
+console.log(person['fav places']);
 
 /////////////////////////////////////////////////
 
 let updateSalary = person.salary = 4000;
 let updateAge = person["age"] = 30;
-// console.log(person);
+console.log(person);
 
 /////////////////////////////////////////////////
 
 const keys = Object.keys(person);
 const values = Object.values(person);
-// console.log(keys);
-// console.log(values);
+console.log(keys);
+console.log(values);
 
 /////////////////////////////////
 
@@ -45,7 +45,18 @@ delete human.favorite.food.iceCream;
 
 ///////////////////////////////////////////////////
 
-// console.log(human.height);
-// console.log(human.favorite.dressColor);
-// console.log(human.favorite.food.iceCream);
-// console.log(human);
+console.log(human.height);
+console.log(human.favorite.dressColor);
+console.log(human.favorite.food.iceCream);
+console.log(human);
+
+for( const keys in human){
+  console.log(keys, ':', human[keys]);
+}
+
+const key = Object.keys(human);
+const value = Object.values(human);
+console.log(key);
+console.log(value);
+
+
